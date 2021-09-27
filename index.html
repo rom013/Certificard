@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Portfólio</title>
+  <title>Portfólio</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <section>
+  <section id="portfolio" style="max-height: 250px;">
     <header class="cabecalho">
       <div class="perfil">
         <img id="perfil" src="https://github.com/rom013.png" draggable="false">
@@ -30,25 +30,25 @@
         <div id="midia">
           <ul>
             <li>
-              <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" class="social" draggable="false">
-              <a href="https://www.instagram.com/romu_013/" target="_blank">Instagram</a>
+
+              <a href="https://www.instagram.com/romu_013/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" class="social" draggable="false"></a>
             </li>
             <li>
-              <img src="https://policiacivil.pb.gov.br/imagens/capa/twitter.png" class="social" draggable="false">
-              <a href="https://twitter.com/r0mull013" target="_blank">Twitter</a>
+
+              <a href="https://twitter.com/r0mull013" target="_blank" /><img src="https://policiacivil.pb.gov.br/imagens/capa/twitter.png" class="social" draggable="false"></a>
             </li>
             <li>
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="social" draggable="false">
-              <a href="https://github.com/rom013" target="_blank">Github</a>
+
+              <a href="https://github.com/rom013" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="social" draggable="false"></a>
             </li>
           </ul>
         </div>
       </div>
       <div class="tema">
         <button onclick="mudarTema()"><span id="tema" class="material-icons">
-settings_brightness
-</span>
-</button>
+            settings_brightness
+          </span>
+        </button>
       </div>
     </header>
     <div id="ver-mais"><button onclick="verMais()" id="button"><span class="material-icons">
@@ -145,6 +145,35 @@ settings_brightness
         <li>🌐 Certficard</li>
       </ul>
     </main>
+  </section>
+
+  <section id="conquistas">
+    <h2>Conquistas</h2>
+    <div id="lista-conquistas">
+      <ul>
+        <li>
+          <img src="./img/Aula 1 - Média.png">
+        </li>
+        <li>
+          <img src="./img/Dia 2 - Calculadora.png">
+        </li>
+        <li>
+          <img src="./img/Dia 3 - Mentalista.png">
+        </li>
+        <li>
+          <img src="./img/Dia 4 e 5 - Aluraflix.png">
+        </li>
+        <li>
+          <img src="./img/Dia 6 - Placar.png">
+        </li>
+        <li>
+          <img src="./img/Dia 7 e 8 - Super Trunfo.png">
+        </li>
+        <li>
+          <img src="./img/Aula 9 - HTML e CSS.png">
+        </li>
+      </ul>
+    </div>
   </section>
 </body>
 
