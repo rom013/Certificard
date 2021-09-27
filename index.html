@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Portfólio</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <title>Portfólio</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <section>
+    <header class="cabecalho">
+      <div class="perfil">
+        <img id="perfil" src="https://github.com/rom013.png" draggable="false">
+        <div>
+          <h2 id="titulo">Rômullo Melo Oliveira<span class="material-icons ajust" title="Verificado">
+              verified
+            </span></h2>
+          <p>Estudante front-end</p>
+        </div>
+
+        <div id="midia">
+          <ul>
+            <li>
+              <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" class="social" draggable="false">
+              <a href="https://www.instagram.com/romu_013/" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <img src="https://policiacivil.pb.gov.br/imagens/capa/twitter.png" class="social" draggable="false">
+              <a href="https://twitter.com/r0mull013" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="social" draggable="false">
+              <a href="https://github.com/rom013" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tema">
+        <button onclick="mudarTema()"><span id="tema" class="material-icons">
+settings_brightness
+</span>
+</button>
+      </div>
+    </header>
+    <div id="ver-mais"><button onclick="verMais()" id="button"><span class="material-icons">
+          expand_more
+        </span></button></div>
+
+    <main id="projetos" style="display: none">
+      <h2>Projetos</h2>
+      <ul id="lista-projetos">
+        <li>
+          <p>🔢 Calculadora de média<button onClick="verMaisCalculadora()" id="verMaisCalculadora" class="btn-codepen"><span class="material-icons">
+                expand_more
+              </span></button></p>
+
+          <div class="codepen-ajust" id="codeCal" style="display: none;">
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BaZwpoZ" data-user="Rom013" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/Rom013/pen/BaZwpoZ">
+                  Calculadora de média</a> by Rômullo Melo (<a href="https://codepen.io/Rom013">@Rom013</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </li>
+        <li>
+          <p>💲 Conversor de moedas<button onClick="verMaisConversor()" id="verMaisConversor" class="btn-codepen"><span class="material-icons">
+                expand_more
+              </span></button></p>
+
+          <div class="codepen-ajust" id="codeCon" style="display: none;">
+            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="VwWQGdK" data-user="Rom013" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/Rom013/pen/VwWQGdK">
+                  Conversor de moedas Top Top</a> by Rômullo Melo (<a href="https://codepen.io/Rom013">@Rom013</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </li>
+        <li>
+          <p>🔮 Mentalista<button onClick="verMaisMentalista()" id="verMaisMentalista" class="btn-codepen"><span class="material-icons">
+                expand_more
+              </span></button></p>
+
+          <div class="codepen-ajust" id="codeMen" style="display: none;">
+            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="PojedRz" data-user="Rom013" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/Rom013/pen/PojedRz">
+                  Mentalista - ID3</a> by Rômullo Melo (<a href="https://codepen.io/Rom013">@Rom013</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </li>
+        <li>
+          <p>🍿 AluraFlix<button onClick="verMaisFlix()" id="verMaisFlix" class="btn-codepen"><span class="material-icons">
+                expand_more
+              </span></button></p>
+
+          <div class="codepen-ajust" id="codeFlix" style="display: none;">
+            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="QWgxZRJ" data-user="Rom013" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/Rom013/pen/QWgxZRJ">
+                  Aluraflix - ImersãoDev3</a> by Rômullo Melo (<a href="https://codepen.io/Rom013">@Rom013</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </li>
+        <li>
+          <p>🏆 Tabela de classificação<button onClick="verMaisTabela()" id="verMaisTabela" class="btn-codepen"><span class="material-icons">
+                expand_more
+              </span></button></p>
+
+          <div class="codepen-ajust" id="codeTab" style="display: none;">
+            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="ZEyMoaB" data-user="Rom013" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/Rom013/pen/ZEyMoaB">
+                  Tabela de classificação</a> by Rômullo Melo (<a href="https://codepen.io/Rom013">@Rom013</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </li>
+        <li>
+          <p>🃏 Super trunfo<button onClick="verMaisSuper()" id="verMaisSuper" class="btn-codepen"><span class="material-icons">
+                expand_more
+              </span></button></p>
+
+          <div class="codepen-ajust" id="codeTrunfo" style="display: none;">
+            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="WNOaLNL" data-user="Rom013" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/Rom013/pen/WNOaLNL">
+                  Super Trunfo - DV3</a> by Rômullo Melo (<a href="https://codepen.io/Rom013">@Rom013</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </li>
+        <li>🌐 Certficard</li>
+      </ul>
+    </main>
+  </section>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
