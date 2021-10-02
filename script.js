@@ -1,6 +1,7 @@
 var domMain = document.getElementById("projetos");
 var domButton = document.getElementById("button");
 var domPort = document.getElementById("portfolio")
+var domSpan = document.getElementById("spanVerMais")
 
 var domIDProjeto = {
   calculadora: document.getElementById("codeCal"),
@@ -20,18 +21,19 @@ var domID = {
 };
 function verMais() {
   domMain.style.display = `flex`;
-  domButton.style.transform = `rotate(180deg)`;
+  domSpan.style.transform = `rotate(180deg)`;
   domPort.removeAttribute("style")
   domButton.removeAttribute("onclick");
   domButton.setAttribute("onClick", "verMenos()");
 }
 function verMenos() {
   domMain.style.display = `none`;
-  domButton.style.transform = `rotate(0deg)`;
+  domSpan.style.transform = `rotate(0deg)`;
   domButton.removeAttribute("onclick");
   domPort.setAttribute("style", "max-height: 250px")
   domButton.setAttribute("onClick", "verMais()");
 }
+
 function verMaisCalculadora() {
   domIDProjeto.calculadora.style.display = `block`;
   domID.cal.style.transform = `rotate(180deg)`;

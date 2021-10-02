@@ -6,7 +6,9 @@ body {
   background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
   height: 100vh;
   width: 100vw; 
+  font-size: 16px;
 }
+
 #grid{
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -27,6 +29,7 @@ section {
 #portfolio {
   margin-left: 50px;
   grid-area: 1 / 1 / 3 / 2;
+  min-width: 555px;
 }
 .cabecalho {
   display: flex;
@@ -91,12 +94,10 @@ section {
   display: flex;
   justify-content: center;
 }
-#ver-mais button {
-  transition: 0.7s;
-  transform-origin: 50% 50%;
-}
 #ver-mais button span {
   font-size: 50px;
+  transition: 0.7s;
+  transform-origin: 50% 50%;
 }
 
 main {
